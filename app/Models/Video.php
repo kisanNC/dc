@@ -1,0 +1,35 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Video extends Model
+{
+    use HasFactory;
+
+    // Table name (optional if naming follows Laravel convention)
+    protected $table = 'videos';
+
+    // Fillable fields for mass assignment
+    protected $fillable = [
+        'title',
+        'description',
+        'video_url',
+        'thumbnail_url',
+        'uploaded_at',
+        'uploaded_by',
+    ];
+
+    // Dates to be cast as Carbon instances
+    protected $dates = ['uploaded_at'];
+
+    // Relationships
+    public function uploader()
+    {
+        return $this->belongsTo(User::class, 'uploaded_by');
+    }
+}
+
+
