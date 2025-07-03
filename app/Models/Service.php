@@ -21,11 +21,11 @@ class Service extends Model
         'created_at',
     ];
 
-    public $timestamps = false; // since you're manually setting created_at
+    public $timestamps = false;
 
     protected $dates = ['created_at'];
 
-    // Relationship to the user who uploaded the service
+
     public function uploader()
     {
         return $this->belongsTo(User::class, 'uploaded_by');

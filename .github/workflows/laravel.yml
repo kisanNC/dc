@@ -2,7 +2,7 @@ name: Laravel CI/CD
 
 on:
   push:
-    branches: [master] # or 'main' depending on your branch
+    branches: [master]
 
 jobs:
   laravel-tests:

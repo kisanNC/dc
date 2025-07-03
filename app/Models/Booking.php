@@ -20,7 +20,7 @@ class Booking extends Model
         'created_at',
     ];
 
-    public $timestamps = false; // using created_at manually
+    public $timestamps = false;
 
     protected $dates = ['booking_date', 'created_at'];
 

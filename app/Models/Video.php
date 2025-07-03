@@ -9,10 +9,10 @@ class Video extends Model
 {
     use HasFactory;
 
-    // Table name (optional if naming follows Laravel convention)
+
     protected $table = 'videos';
 
-    // Fillable fields for mass assignment
+
     protected $fillable = [
         'title',
         'description',
