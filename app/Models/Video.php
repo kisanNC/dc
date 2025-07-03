@@ -22,7 +22,7 @@ class Video extends Model
         'uploaded_by',
     ];
 
-    // Dates to be cast as Carbon instances
+
     protected $dates = ['uploaded_at'];
 
     // Relationships

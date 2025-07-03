@@ -20,7 +20,7 @@ class CalendarEvent extends Model
         'created_at',
     ];
 
-    public $timestamps = false; // because you're manually handling created_at
+    public $timestamps = false;
 
     protected $dates = ['start_time', 'end_time', 'created_at'];
 
